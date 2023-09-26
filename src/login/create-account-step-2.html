@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100x</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-neutral-1000 md:mx-auto md:mb-0 md:h-[840px] md:w-[390px] md:border md:border-white"
+  >
+    <main class="flex h-screen w-full">
+      <section
+        class="flex w-full flex-shrink-0 flex-col items-start gap-3 rounded-2xl px-0.9rem pb-5"
+      >
+        <div class="flex items-center gap-5 self-stretch py-3">
+          <a href="../login/index.html"
+            ><img src="../../public/images/cancel.svg" />
+          </a>
+          <p class="text-0.9rem font-bold leading-normal text-neutral-50">
+            Step 2 of 4
+          </p>
+        </div>
+
+        <div class="flex flex-col items-start gap-5 self-stretch">
+          <h1 class="text-2xl font-bold leading-normal text-neutral-50">
+            Create your account
+          </h1>
+
+          <fieldset
+            class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+          >
+            <legend
+              class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+            >
+              <div class="px-2">Name</div>
+            </legend>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+            />
+          </fieldset>
+
+          <fieldset
+            class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+          >
+            <legend
+              class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+            >
+              <div class="px-2">Email</div>
+            </legend>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+            />
+          </fieldset>
+
+          <fieldset
+            class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+          >
+            <legend
+              class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+            >
+              <div class="px-2">Date of Birth</div>
+            </legend>
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+            />
+          </fieldset>
+        </div>
+
+        <div
+          class="flex grow flex-col items-center justify-end gap-2.5 self-stretch px-5 pt-20"
+        >
+          <a href="../login/create-account-step-3.html">
+            <button
+              class="flex w-[360px] items-center justify-center gap-2.5 rounded-6xl bg-twitter-default p-5 hover:bg-twitter-hover disabled:opacity-50"
+            >
+              <span
+                class="text-center text-base font-bold not-italic leading-normal text-neutral-50"
+                >Sign up</span
+              >
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
