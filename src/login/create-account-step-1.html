@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100x</title>
     <link href="../../dist/output.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../../public/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../public/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../public/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../../public/favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../public/favicon_io/site.webmanifest" />
   </head>
   <body
-    class="bg-neutral-1000 md:mx-auto md:mb-0 md:h-[840px] md:w-[390px] md:border md:border-white"
+    class="bg-neutral-1000 "
   >
     <main class="flex h-screen w-full">
       <section
@@ -65,59 +79,122 @@
             <h3 class="text-0.9rem font-bold leading-normal text-neutral-50">
               Date of birth
             </h3>
-            <p class="text-secondary text-0.8rem font-normal leading-normal">
+            <p class="text-0.8rem font-normal leading-normal text-secondary">
               This will not be shown publicly. Confirm your own age, even if
               this account is for a business, a pet, or something else.
             </p>
           </div>
-
-          <div class="flex items-center gap-3 self-stretch">
-            <!-- Month field -->
+          <!-- Date Picker -->
+          <section class="grid grid-cols-4 w-full gap-3">
             <fieldset
-              class="w-10.6rem group flex items-center rounded border border-solid border-neutral-500 px-3 py-4 focus-within:border-twitter-default"
+              class="group col-span-2 rounded border border-neutral-500 px-3 pb-4 pt-2 focus-within:border-twitter-default"
             >
               <legend
-                class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+                class="text-xs font-medium text-neutral-500 group-focus-within:text-twitter-default"
               >
-                <div class="px-2">Month</div>
+                <div class="px-1">Month</div>
               </legend>
-              <input
-                type="text"
-                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-              />
-              <img src="../../public/images/chevron-down.svg" />
+              <select
+                placeholder="Month"
+                class=" bg-transparent w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              >
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+              <!-- <input type="text" placeholder="Select month" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500"> -->
             </fieldset>
-            <!-- Date field -->
             <fieldset
-              class="w-5.1rem group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 focus-within:border-twitter-default"
+              class="group rounded border border-neutral-500 px-3 pb-4 pt-2 focus-within:border-twitter-default"
             >
               <legend
-                class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+                class="text-xs font-medium text-neutral-500 group-focus-within:text-twitter-default"
               >
-                <div class="px-2">Date</div>
+                <div class="px-1">Day</div>
               </legend>
-              <input
-                type="text"
-                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-              />
-              <img src="../../public/images/chevron-down.svg" />
+              <select
+                class=" bg-transparent  w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
             </fieldset>
-            <!-- Year field -->
             <fieldset
-              class="w-5.1rem group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 focus-within:border-twitter-default"
+              class="group rounded border border-neutral-500 px-3 pb-4 pt-2 focus-within:border-twitter-default"
             >
               <legend
-                class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+                class="text-xs font-medium text-neutral-500 group-focus-within:text-twitter-default"
               >
-                <div class="px-2">Year</div>
+                <div class="px-1">Year</div>
               </legend>
-              <input
-                type="text"
-                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-              />
-              <img src="../../public/images/chevron-down.svg" />
+              <select
+                class=" bg-transparent  w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              >
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+              </select>
             </fieldset>
-          </div>
+          </section>
         </div>
 
         <div
