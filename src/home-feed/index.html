@@ -42,28 +42,49 @@
         </div>
       </section>
 
-      <section class="w-full">
-        <section
-          class="flex h-3.6rem shrink-0 items-center justify-center gap-40 border-b border-solid border-neutral-700 px-20 pb-0 pt-5"
-        >
-          <button
-            class="group flex h-2.3rem flex-col gap-4 border-twitter-default focus:border-b-3"
+      <div
+        class="flex w-full flex-1 justify-around border-b border-b-neutral-700 bg-neutral-1000 backdrop-blur-md"
+      >
+        <div class="flex w-full flex-col items-center hover:bg-neutral-800">
+          <input
+            type="radio"
+            class="peer/foryou_tab hidden w-full"
+            id="foryou_tab"
+            value="foryou_tab"
+            name="home_tabs"
+            checked=""
+          />
+          <label
+            for="foryou_tab"
+            class="block w-full cursor-pointer py-4 text-center font-medium text-neutral-400 transition-all duration-100 peer-checked/foryou_tab:font-bold peer-checked/foryou_tab:text-neutral-50"
           >
-            <span
-              class="text-base font-medium not-italic leading-normal text-neutral-50 group-focus:text-neutral-400 whitespace-nowrap"
-              >For you</span
-            >
-          </button>
-          <button
-            class="group flex h-2.3rem flex-col gap-4 border-twitter-default focus:border-b-3"
+            For you
+          </label>
+
+          <div
+            class="rounded-2.5xl hidden h-1 w-14 bg-twitter-default peer-checked/foryou_tab:block"
+          ></div>
+        </div>
+
+        <div class="flex w-full flex-col items-center hover:bg-neutral-900">
+          <input
+            type="radio"
+            class="peer/following hidden w-full"
+            id="following"
+            value="following"
+            name="home_tabs"
+          />
+          <label
+            for="following"
+            class="block w-full cursor-pointer border-twitter-default py-4 text-center font-medium text-neutral-400 transition-all duration-100 peer-checked/following:font-bold peer-checked/following:text-neutral-50"
           >
-            <span
-              class="text-base font-medium not-italic leading-normal text-neutral-50 group-focus:text-neutral-400"
-              >Following</span
-            >
-          </button>
-        </section>
-      </section>
+            Following
+          </label>
+          <div
+            class="w-4.3rem rounded-2.5xl hidden h-1 bg-twitter-default peer-checked/following:block"
+          ></div>
+        </div>
+      </div>
     </header>
 
     <main class="flex w-full flex-col pb-20">
@@ -87,13 +108,8 @@
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
-              <p class="text-15 font-regular text-neutral-50">
-                i've seen people absolutely despise auto layout in figma but i
-                think it's a lifesaver-<br />1. tidies everything nice and
-                compact<br />2. makes responsive design effortless<br />3. no
-                manual adjustments post any tweaks<br />4. saves a tonnn of
-                time<br /><br />sorry, but will stay an auto layout maxi all
-                life.
+              <p class="text-0.9rem font-regular text-neutral-50">
+                Don't wish for it, work for it.
               </p>
             </div>
 
@@ -152,7 +168,7 @@
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
-              <p class="text-15 font-regular text-neutral-50">
+              <p class="text-0.9rem font-regular text-neutral-50">
                 i've seen people absolutely despise auto layout in figma but i
                 think it's a lifesaver-<br />1. tidies everything nice and
                 compact<br />2. makes responsive design effortless<br />3. no
@@ -217,7 +233,7 @@
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
-              <p class="text-15 font-regular text-neutral-50">
+              <p class="text-0.9rem font-regular text-neutral-50">
                 Writing gets easier after the first sentence.<br /><br />Lifting
                 gets easier after the first set.<br /><br />People think and
                 think and think until they finally decide to act. Their
@@ -281,7 +297,7 @@
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
-              <p class="text-15 font-regular text-neutral-50">
+              <p class="text-0.9rem font-regular text-neutral-50">
                 i've seen people absolutely despise auto layout in figma but i
                 think it's a lifesaver-<br />1. tidies everything nice and
                 compact<br />2. makes responsive design effortless<br />3. no
@@ -346,7 +362,7 @@
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
-              <p class="text-15 font-regular text-neutral-50">
+              <p class="text-0.9rem font-regular text-neutral-50">
                 i've seen people absolutely despise auto layout in figma but i
                 think it's a lifesaver-<br />1. tidies everything nice and
                 compact<br />2. makes responsive design effortless<br />3. no
@@ -394,7 +410,7 @@
       </section>
 
       <div
-        class="fixed bottom-16.6rem left-1/2 mx-auto flex -translate-x-1/2 transform items-center justify-center gap-2.5 rounded-8xl bg-searchbar-fill px-8 py-3"
+        class="fixed bottom-24 left-1/2 mx-auto flex -translate-x-1/2 transform items-center justify-center gap-2.5 rounded-8xl bg-searchbar-fill px-8 py-3"
       >
         <p
           class="whitespace-nowrap text-0.9rem font-normal leading-normal text-neutral-50"
@@ -424,14 +440,16 @@
             <img src="../../public/images/home-inactive.svg" />
           </button>
         </div>
-        <div class="group">
-          <button class="group-hover:hidden">
-            <img src="../../public/images/profile-inactive.svg" />
-          </button>
-          <button class="hidden group-hover:block">
-            <img src="../../public/images/profile-active.svg" />
-          </button>
-        </div>
+        <a href="../user-profile/index.html">
+          <div class="group">
+            <button class="group-hover:hidden">
+              <img src="../../public/images/profile-inactive.svg" />
+            </button>
+            <button class="hidden group-hover:block">
+              <img src="../../public/images/profile-active.svg" />
+            </button>
+          </div>
+        </a>
       </footer>
     </main>
   </body>
