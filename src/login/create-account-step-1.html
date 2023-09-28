@@ -24,10 +24,9 @@
     />
     <link rel="manifest" href="../../public/favicon_io/site.webmanifest" />
   </head>
-  <body
-    class="bg-neutral-1000 "
-  >
-    <main class="flex h-screen w-full">
+  <body class="bg-neutral-1000 ">
+
+    <main class="flex w-full ">
       <section
         class="flex w-full flex-shrink-0 flex-col items-start gap-3 rounded-2xl px-0.9rem pb-5"
       >
@@ -85,7 +84,7 @@
             </p>
           </div>
           <!-- Date Picker -->
-          <section class="grid grid-cols-4 w-full gap-3">
+          <section class="grid w-full grid-cols-4 gap-3">
             <fieldset
               class="group col-span-2 rounded border border-neutral-500 px-3 pb-4 pt-2 focus-within:border-twitter-default"
             >
@@ -96,7 +95,7 @@
               </legend>
               <select
                 placeholder="Month"
-                class=" bg-transparent w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
               >
                 <option>January</option>
                 <option>February</option>
@@ -122,7 +121,7 @@
                 <div class="px-1">Day</div>
               </legend>
               <select
-                class=" bg-transparent  w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
               >
                 <option>1</option>
                 <option>2</option>
@@ -166,7 +165,7 @@
                 <div class="px-1">Year</div>
               </legend>
               <select
-                class=" bg-transparent  w-full text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
               >
                 <option>2023</option>
                 <option>2022</option>
@@ -196,22 +195,22 @@
             </fieldset>
           </section>
         </div>
-
-        <div
-          class="flex grow flex-col items-center justify-end gap-2.5 self-stretch px-5 pt-20"
-        >
-          <a href="../login/create-account-step-2.html">
-            <button
-              class="flex w-20.8rem items-center justify-center gap-2.5 rounded-5xl bg-neutral-50 px-6 py-2 shadow-3xl backdrop-blur-23.66 hover:bg-neutral-200 disabled:opacity-50"
-            >
-              <span
-                class="text-center text-base font-bold not-italic leading-normal text-neutral-1000"
-                >Create account</span
-              >
-            </button>
-          </a>
-        </div>
       </section>
     </main>
+
+    <footer
+      class="fixed bottom-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    >
+      <a href="../login/create-account-step-2.html">
+        <button
+          class="flex w-20.8rem items-center justify-center gap-2.5 rounded-5xl bg-neutral-50 px-6 py-2 shadow-3xl backdrop-blur-23.66 hover:bg-neutral-200 disabled:opacity-50"
+        >
+          <span
+            class="text-center text-base font-bold not-italic leading-normal text-neutral-1000"
+            >Create account</span
+          >
+        </button>
+      </a>
+    </footer>
   </body>
 </html>
