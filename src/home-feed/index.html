@@ -32,7 +32,7 @@
         class="flex w-full items-center border-b border-neutral-700 px-4 py-5"
       >
         <img
-          src="../../public/images/user-avatar.png"
+          src="../../public/images/profile_avatar.png"
           alt="Profile Picture"
           class="fixed w-9 rounded-full"
         />
@@ -47,10 +47,10 @@
           class="flex h-3.6rem shrink-0 items-center justify-center gap-40 border-b border-solid border-neutral-700 px-20 pb-0 pt-5"
         >
           <button
-            class="group flex h-2.3rem flex-col gap-4 border-twitter-default focus:border-b-3 whitespace-nowrap"
+            class="group flex h-2.3rem flex-col gap-4 border-twitter-default focus:border-b-3"
           >
             <span
-              class="text-base font-medium not-italic leading-normal text-neutral-50 group-focus:text-neutral-400"
+              class="text-base font-medium not-italic leading-normal text-neutral-50 group-focus:text-neutral-400 whitespace-nowrap"
               >For you</span
             >
           </button>
@@ -74,7 +74,7 @@
         >
           <div class="mr-4 h-12 min-w-fit">
             <img
-              src="../../public/images/user-image.jpeg"
+              src="../../public/images/user-avatar.png"
               alt="User Picture"
               class="h-12 w-12 rounded-full"
             />
@@ -82,13 +82,18 @@
           <div class="w-full">
             <div class="mb-1">
               <div class="mb-1 text-neutral-50">
-                <span class="text-base font-medium">Ajinkya Bodke</span>
-                <span class="text-neutral-500">@AjinkyaB</span>
+                <span class="text-base font-medium">Name</span>
+                <span class="text-neutral-500">@handle</span>
                 <span class="text-neutral-500">•</span>
                 <span class="text-neutral-500">10h</span>
               </div>
               <p class="text-15 font-regular text-neutral-50">
-                Don't wish for it, work for it.
+                i've seen people absolutely despise auto layout in figma but i
+                think it's a lifesaver-<br />1. tidies everything nice and
+                compact<br />2. makes responsive design effortless<br />3. no
+                manual adjustments post any tweaks<br />4. saves a tonnn of
+                time<br /><br />sorry, but will stay an auto layout maxi all
+                life.
               </p>
             </div>
 
@@ -387,46 +392,46 @@
           </div>
         </div>
       </section>
-      
-      <div class="flex py-3 px-8 justify-center items-center gap-2.5 fixed  bottom-16.6rem rounded-8xl mx-auto left-1/2 transform -translate-x-1/2 bg-searchbar-fill">
-        <p class="text-neutral-50 text-0.9rem font-normal leading-normal whitespace-nowrap">Copied to clipboard.</p>
-      </div>
 
-      <div class="fixed p-4 items-start gap-2.5 rounded-full bg-twitter-default shadow-3xl bottom-20 right-4">
-        <img class="w-8 h-8 rounded-full" src="../../public/images/plus-content-add.svg">
+      <div
+        class="fixed bottom-16.6rem left-1/2 mx-auto flex -translate-x-1/2 transform items-center justify-center gap-2.5 rounded-8xl bg-searchbar-fill px-8 py-3"
+      >
+        <p
+          class="whitespace-nowrap text-0.9rem font-normal leading-normal text-neutral-50"
+        >
+          Copied to clipboard.
+        </p>
       </div>
+      <a href="../compose-tweet/index.html">
+        <button
+          class="fixed bottom-20 right-4 items-start gap-2.5 rounded-full bg-twitter-default p-4 shadow-3xl"
+        >
+          <img
+            class="h-8 w-8 rounded-full"
+            src="../../public/images/plus-content-add.svg"
+          />
+        </button>
+      </a>
 
       <footer
-        class="py-1.1rem fixed bottom-0 flex w-full items-center justify-center gap-10 border-t border-neutral-800 bg-neutral-1000 px-6"
+        class="fixed bottom-0 flex w-full items-center justify-center gap-10 border-t border-neutral-800 bg-neutral-1000 px-6 py-1.1rem"
       >
-        <div class="group ">
-          <button class=" group-focus-within:hidden  ">
-            <img
-              
-              src="../../public/images/home-active.svg"
-            />
+        <div class="group">
+          <button class="group-focus-within:hidden">
+            <img src="../../public/images/home-active.svg" />
           </button>
-          <button  class="hidden group-focus-within:block">
-            <img
-             
-              src="../../public/images/home-inactive.svg"
-            />
+          <button class="hidden group-focus-within:block">
+            <img src="../../public/images/home-inactive.svg" />
           </button>
         </div>
-        <div class="group ">
-            <button class=" group-hover:hidden  ">
-              <img
-                src="../../public/images/profile-inactive.svg"
-              />
-            </button>
-            <button  class="hidden group-hover:block">
-              <img
-               
-                src="../../public/images/profile-active.svg"
-              />
-            </button>
-          </div>
-
+        <div class="group">
+          <button class="group-hover:hidden">
+            <img src="../../public/images/profile-inactive.svg" />
+          </button>
+          <button class="hidden group-hover:block">
+            <img src="../../public/images/profile-active.svg" />
+          </button>
+        </div>
       </footer>
     </main>
   </body>
