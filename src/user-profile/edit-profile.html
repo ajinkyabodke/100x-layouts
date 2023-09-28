@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100x</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="../../public/images/100x-logo.svg"> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../public/favicon_io/site.webmanifest" />
+  </head>
+
+  <body class="bg-neutral-1000 px-4">
+    <header class="flex flex-col items-start gap-3">
+      <section class="flex items-center justify-between self-stretch py-3">
+        <div class="flex items-center gap-5">
+          <a href="./index.html"
+            ><img src="../../public/images/cancel.svg" />
+          </a>
+          <p class="text-base font-bold leading-normal text-neutral-50">
+            Edit profile
+          </p>
+        </div>
+        <a href="./index.html">
+          <button
+            class="flex w-5.2rem items-center justify-center gap-2.5 rounded-4xl bg-neutral-50 px-5 py-2 shadow-3xl backdrop-blur-23.66 hover:bg-neutral-200 md:w-13.8rem md:rounded-6xl"
+          >
+            <span
+              class="text-center text-base font-bold not-italic leading-normal text-neutral-1000"
+              >Save</span
+            >
+          </button>
+        </a>
+      </section>
+
+      <!-- Banner Image -->
+      <div class="relative flex w-full">
+        <img
+          class="w-full md:h-15.4rem"
+          src="../../public/images/banner-image.png"
+          alt="Banner Image"
+        />
+        <div
+          class="absolute flex h-full w-full items-center justify-center gap-2"
+        >
+          <img src="../../public/images/add-image.svg" />
+          <img src="../../public/images/cancel-g.svg" />
+        </div>
+      </div>
+    </header>
+
+    <main class="relative">
+      <!-- Profile Icon -->
+      <img
+        class="w-4.2rem h-4.2rem absolute -top-12 left-1 rounded-7xl border-4 border-neutral-1000"
+        src="../../public/images/profile_avatar.png"
+      />
+
+      <section
+        class="relative flex flex-col items-center gap-5 self-stretch pt-5"
+      >
+        <fieldset
+          class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+        >
+          <legend
+            class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+          >
+            <div class="px-2">Name</div>
+          </legend>
+          <input
+            type="text"
+            placeholder="Name"
+            value="Ajinkya Bodke"
+            class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+          />
+        </fieldset>
+
+        <fieldset
+          class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+        >
+          <legend
+            class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+          >
+            <div class="px-2">Bio</div>
+          </legend>
+          <textarea
+            type="text"
+            placeholder="Bio"
+            class="w-full resize-none bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+          >
+Full Stack Developer👨‍💻 
+Endurance Athlete 🏊🚴‍♂️🏃</textarea
+          >
+        </fieldset>
+
+        <fieldset
+          class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+        >
+          <legend
+            class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+          >
+            <div class="px-2">Location</div>
+          </legend>
+          <input
+            type="text"
+            placeholder="Location"
+            class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+          />
+        </fieldset>
+
+        <fieldset
+          class="group flex items-center self-stretch rounded border border-solid border-neutral-500 px-3 py-4 pt-2 focus-within:border-twitter-default"
+        >
+          <legend
+            class="text-xs font-medium not-italic leading-normal text-neutral-500 group-focus-within:text-twitter-default"
+          >
+            <div class="px-2">Website</div>
+          </legend>
+          <input
+            type="text"
+            placeholder="Website"
+            class="w-full bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+          />
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>
