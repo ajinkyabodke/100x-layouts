@@ -807,10 +807,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -825,10 +821,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-0 {
@@ -1122,16 +1114,8 @@ video {
   padding-top: 1.25rem;
 }
 
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.text-0\.8rem {
-  font-size: 0.875rem;
 }
 
 .text-0\.9rem {
@@ -1150,6 +1134,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -1403,10 +1392,6 @@ video {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:pr-10 {
-    padding-right: 2.5rem;
   }
 
   .lg\:pr-5 {
